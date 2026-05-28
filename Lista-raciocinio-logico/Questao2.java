@@ -19,6 +19,6 @@ public static void main(String [] args){
 
   System.out.printf("A quantidade de gasolina necessária é: %.2f\n", lGasolinaNecessaria);
   System.out.printf("Vai custar : R$%.2f\n", valorFinal);
-  
+  input.close();
 }
 }
