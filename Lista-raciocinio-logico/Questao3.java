@@ -15,7 +15,7 @@ public static void main(String [] args){
   } else {
     System.out.println("\nVocê pode tirar a carteira de habilitação.");
   }
-  
+  input.close();
   
 }
 }
