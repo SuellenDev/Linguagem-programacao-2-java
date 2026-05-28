@@ -11,8 +11,7 @@ public static void main(String [] args){
   System.out.println("Informe a quantidade de horas trabalhadas no mês: ");
   horasTb = input.nextDouble();
   finalSalario = 20 * horasTb;
-  System.out.println("O salário no mês foi: R$ " + finalSalario);
+  System.out.printf("\nO salário no mês foi: R$%.2f ", finalSalario);
   input.close();
 }
 }
-
