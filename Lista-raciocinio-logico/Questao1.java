@@ -1,4 +1,4 @@
-//Contruir um algoritmo que solicite ao usu[ario a quantidade de horas trabalhadas no mês por um operário. Em seguida, calcular e informar o seu salãrio sabendo que ele ganha R$20,00 por hora.
+//Contruir um algoritmo que solicite ao usuário a quantidade de horas trabalhadas no mês por um operário. Em seguida, calcular e informar o seu salãrio sabendo que ele ganha R$20,00 por hora.
 import java.util.Scanner;
 public class Main {
 public static void main(String [] args){
