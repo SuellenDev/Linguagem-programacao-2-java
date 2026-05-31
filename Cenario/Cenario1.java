@@ -15,6 +15,13 @@ public class void Main{
       
     }
 
-    public Pr                                   
+    public criarProduto(){
+      
+    }
+
+    public double calcularValorestoque(){
+      estoqueProduto = preco * quantidadeEstoqueProduto;
+    }  
+    
   }
 }
