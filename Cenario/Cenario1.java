@@ -2,8 +2,9 @@ import java.util.Scanner;
 
 public class void Main{
   public static void main(String[] args){
+    Scanner scanner = new Scanner(System.in);
     private String nome;
-    private float preco;
+    private double preco;
     private int quantidadeEstoque;
     private static int contador;
 
@@ -14,7 +15,10 @@ public class void Main{
       this.contador = contadorProduto;
 
       if (preco < 0){
-        system.out.println("");
+        system.out.println("O preço não pode ser menor que 0.");
+      }else{
+        double precoProduto = scanner.nextDouble();
+        
       }
       
     }
@@ -26,6 +30,6 @@ public class void Main{
     public double calcularValorestoque(){
       estoqueProduto = preco * quantidadeEstoqueProduto;
     }  
-    
+    Scanner.close();
   }
 }
