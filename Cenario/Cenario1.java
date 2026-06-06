@@ -13,18 +13,24 @@ public class void Main{
       this.preco = precoProduto;
       this.quantidadeEstoque = quantidadeEstoqueProduto;
       this.contador = contadorProduto;
+      Produto.contadorProduto++;
 
-      if (preco < 0){
+      if (precoProduto < 0){
+        precoProduto = 0;
         system.out.println("O preço não pode ser menor que 0.");
       }else{
         double precoProduto = scanner.nextDouble();
-        
       }
-      
-    }
 
-    public criarProduto(){
-      
+      if (quantidadeEstoqueProduto < 0){
+        quantidadeEstoqueProduto = 0;
+        system.out.println("O preço não pode ser menor que 0.");
+      }else{
+        double precoProduto = scanner.nextDouble();
+      }
+
+    public mostrarTotalprodutos(){
+      system.out.printf("O total de produtos criados foi: %d", contadorProdutos)
     }
 
     public double calcularValorestoque(){
