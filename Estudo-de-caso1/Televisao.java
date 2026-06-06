@@ -20,71 +20,73 @@ subir e descer canal.
 import java.util.Scanner;
 
 public class Televisao {
-	public static void main(String[] args) {
+
     int tamanhoPolegadas;
     int volume = 5;
     String marca;
     int voltagem;
     int canal;
-    dooble ligado = false;
+    boolean ligado = false;
     float consumo;
 
-    public Televisao(int tamanhoPolegadasTv, int volumeTv, String marcaTv, int voltagemTv, int canalTv, dooble ligadoTv, float consumoTv){
-    this.tamanhoPolegadas = tamanhoPolegadasTv;
-    this.volume = volumeTv;
-    this.marca = marcaTv;
-    this.voltagem = voltagemTv;
-    this.canal = canalTv;
-    this.ligado = ligadoTv;
-    this.consumo = consumoTv;
-      
+    public Televisao(int tamanhoPolegadasTv, int volumeTv, String marcaTv,
+                     int voltagemTv, int canalTv, boolean ligadoTv,
+                     float consumoTv) {
+
+        this.tamanhoPolegadas = tamanhoPolegadasTv;
+        this.volume = volumeTv;
+        this.marca = marcaTv;
+        this.voltagem = voltagemTv;
+        this.canal = canalTv;
+        this.ligado = ligadoTv;
+        this.consumo = consumoTv;
     }
 
-    public desligarTv(){
-      dooble ligadoTv = false;
-      System.out.println("Desligando televisão...");
+    public void desligarTv() {
+        ligado = false;
+        System.out.println("Desligando televisão...");
     }
 
-    public ligarTv(){
-      consumoTv = voltagemTv * quantidadePolegadasTv;
-      dooble ligadoTv = true;
-      System.out.println("\nLigando televisão...");
-      System.out.printf("O consumo da televisão é: %.2f", consumoTv);
-      
+    public void ligarTv() {
+        consumo = voltagem * tamanhoPolegadas;
+        ligado = true;
+        System.out.println("\nLigando televisão...");
+        System.out.printf("O consumo da televisão é: %.2f%n", consumo);
     }
 
-    public subirCanal(){
-      canalTv++;
-        if(canalTv > 100){
-        canalTv = 100;
+    public void subirCanal() {
+        canal++;
+        if (canal > 100) {
+            canal = 100;
         }
     }
 
-    public descerCanal(){
-      canalTv--;
-        if(canalTv < 1){
-        canalTv = 1;
+    public void descerCanal() {
+        canal--;
+        if (canal < 1) {
+            canal = 1;
         }
     }
 
-    public aumentarVolume(){
-      volumeTv++;
-        if(volumeTv > 10){
-        volumeTv = 10;
+    public void aumentarVolume() {
+        volume++;
+        if (volume > 10) {
+            volume = 10;
         }
     }
 
-    public diminuirVolume(){
-      volumeTv--;
-        if(volumeTv < 1){
-        volumeTv = 1;
+    public void diminuirVolume() {
+        volume--;
+        if (volume < 1) {
+            volume = 1;
         }
     }
 
-close.Scanner();
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
-    
-	}
+        Televisao tv = new Televisao(50, 5, "Samsung", 220, 1, false, 0);
+
+        input.close();
+    }
 }
-
-
