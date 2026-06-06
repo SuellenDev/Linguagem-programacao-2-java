@@ -12,70 +12,79 @@ virar a direita e esquerda;
 marcha para cima e para baixo */
 
 import java.util.Scanner;
+
 public class Carro {
-public static void main(String [] args){
-  //atributos
-  Scanner input = new Scanner (System.in);
-  String modelo;
-  double velocidade;
-  double aceleracao;
-  int marcha;
-  boolean ligado = false;
-  
-//construtor
-  public Carro (String modeloCarro, double velocidadeCarro, double aceleracaoCarro, int marchaCarro, boolean ligadoCarro) {
-    this.modelo = modeloCarro;
-    this.velocidade = velocidadeCarro;
-    this.aceleracao = aceleracaoCarro;
-    this.marcha = marchaCarro;
-    this.ligado = ligadoCarro;
-    
-  }
-  //comportamentos
-  public void ligarCarro(){
-    ligado = true;
-    System.out.println("O carro ligado.");
-  }
 
-  public void desligarCarro(){
-    ligado = false;
-    System.out.println("O carro desligado.");
-  }
+    // atributos
+    String modelo;
+    double velocidade;
+    double aceleracao;
+    int marcha;
+    boolean ligado = false;
 
-  public void acelerarCarro(){
-    aceleracao++;
-    System.out.println("Acelerando.");
-  }
-  
-    public void desalerarCarro(){
-    aceleracao--;
-    System.out.println("Desacelerando.");
-  }
-  
-    public void virarDireita(){
-      System.out.println("Virando a direita.");
+    // construtor
+    public Carro(String modeloCarro, double velocidadeCarro,
+                 double aceleracaoCarro, int marchaCarro,
+                 boolean ligadoCarro) {
+
+        this.modelo = modeloCarro;
+        this.velocidade = velocidadeCarro;
+        this.aceleracao = aceleracaoCarro;
+        this.marcha = marchaCarro;
+        this.ligado = ligadoCarro;
     }
 
-    public void virarEsquerda(){
-      System.out.println("Virando a esquerda.");
+    // comportamentos
+    public void ligarCarro() {
+        ligado = true;
+        System.out.println("O carro ligado.");
     }
 
-    public void marchaParaCima(){
-      marcha++;
-      if (marchaCarro > 5){
-        marcha = 5;
-      }
-      System.out.printf("Marcha para cima, %dº marcha.", marchaCarro);
-    } 
+    public void desligarCarro() {
+        ligado = false;
+        System.out.println("O carro desligado.");
+    }
 
-    public void marchaParaBaixo(){
-      marcha--;
-      if (marchaCarro < 1){
-        marcha = 1;
-      }
-      System.out.printf("Marcha para baixo, %dº marcha.", marchaCarro);
-    } 
-  
-  input.close();
-}
+    public void acelerarCarro() {
+        aceleracao++;
+        System.out.println("Acelerando.");
+    }
+
+    public void desalerarCarro() {
+        aceleracao--;
+        System.out.println("Desacelerando.");
+    }
+
+    public void virarDireita() {
+        System.out.println("Virando a direita.");
+    }
+
+    public void virarEsquerda() {
+        System.out.println("Virando a esquerda.");
+    }
+
+    public void marchaParaCima() {
+        marcha++;
+        if (marcha > 5) {
+            marcha = 5;
+        }
+        System.out.printf("Marcha para cima, %dº marcha.%n", marcha);
+    }
+
+    public void marchaParaBaixo() {
+        marcha--;
+        if (marcha < 1) {
+            marcha = 1;
+        }
+        System.out.printf("Marcha para baixo, %dº marcha.%n", marcha);
+    }
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        Carro carro = new Carro("Gol", 0, 0, 1, false);
+
+        input.close();
+    }
 }
