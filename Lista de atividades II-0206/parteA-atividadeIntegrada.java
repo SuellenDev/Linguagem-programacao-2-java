@@ -40,6 +40,10 @@ Identifique onde existem relacionamentos de:
 • Herança
 Justifique suas respostas.
 
+Questão 5
+Explique por que o conceito de herança pode reduzir a duplicação de código
+neste sistema.
+
 1) Classes: Paciente, ProfissionaisSaude e consultasMedicas.
 2) Paciente: nome, idade, prontuarioMedico, cpf
 Profisionais saude: nome, especialidade, crm, coren
@@ -51,5 +55,6 @@ medico e consulta: Agregação
 paciente e prontuario: Composição
 profissionais e prontuario: Agregação
 consultas e prontuario: Composição
+5) Pois a classe filho pode herdar caracteristicas da classe Pai, tendo os mesmos comportamentos pode ser chamada sem gerando um reuso de código. 
 
 */
