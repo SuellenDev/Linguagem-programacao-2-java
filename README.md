@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://via.placeholder.com/1200x300.png?text=LINGUAGEM+PROGRAMACAO+JAVA" alt="Banner do Projeto" />
+  <img src="https://placehold.co/1200x300?text=LINGUAGEM+DE+PROGRAMACAO+JAVA" alt="Banner do Projeto" />
 </p>
 
 <h1 align="center">SEU PROJETO</h1>
@@ -76,17 +76,4 @@ IntelliJ / Eclipse  █████████████████
 Aluno: Suellen Araújo Costa
 Disciplina: Linguagem de Programação II
 Curso: Sistemas de Informação
-```
-
----
-
-Se quiser, posso deixar ainda mais profissional com:
-
-- layout estilo **GitHub profile README**
-- gráficos reais com **SVG dinâmico**
-- card de estatísticas (linguagens, commits)
-- versão estilo “portfólio de desenvolvedor”
-- tema dark completo com banner
-
-Só me diga 👍
 ```
