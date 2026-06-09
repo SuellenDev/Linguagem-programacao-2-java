@@ -8,13 +8,16 @@ c) Professor e Projetor
 d) Carro e Motor
 e) Cliente e Endereços
 
-A) Em dúvida
+A) Composição, porém em dúvida.
 B) Composição, pois todo computador deve haver o processador para funcionar.
 C) Agregação, pois o projetor é independente, nem todo professor utiliza projetor.
 D) Composição, na construção mecânica de um carro deve conter o motor.
-E) Que tipo de endereço? Endereço de rede?
+E) Agregação, pois um cliente pode ter vários ou nenhum endereço.
 
+Explique o que acontece com os objetos componentes quando o objeto
+principal é destruído.
 
+Resposta: Ele não faz sentido sozinho, então é destruído automaticamente quando o principal também é.
 
 
 */
