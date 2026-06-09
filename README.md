@@ -1,8 +1,4 @@
 <p align="center">
-  <img src="https://placehold.co/1200x300/000000/a020f0?text=JAVA+%7C+LP2" alt="Banner" />
-</p>
-
-<p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" width="120" />
 </p>
 
