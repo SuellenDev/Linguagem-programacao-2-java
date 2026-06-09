@@ -1,11 +1,9 @@
 <p align="center">
-  <img src="https://placehold.co/1200x300?text=LINGUAGEM+DE+PROGRAMACAO+JAVA" alt="Banner do Projeto" />
+  <img src="https://placehold.co/1200x300/000000/a020f0?text=JAVA+%7C+LP2" alt="Banner" />
 </p>
 
-<h1 align="center">SEU PROJETO</h1>
-
 <p align="center">
-  Repositório destinado às atividades da disciplina **Linguagem de Programação II**, utilizando a linguagem **Java**.
+  <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" width="120" />
 </p>
 
 # Linguagem de Programação II — Java
