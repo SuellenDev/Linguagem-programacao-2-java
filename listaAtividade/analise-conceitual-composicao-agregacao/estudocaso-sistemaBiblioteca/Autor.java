@@ -1,9 +1,8 @@
 package sistemaBiblioteca;
 
-public class Autor{
-  public string nome;
-  public string dataNascimento;
-  public string biografia;
+public String nome;
+public String dataNascimento;
+public String biografia;
 
   public Autor(String nome, String dataNascimento, String biografia){
     this.nome = nome;
