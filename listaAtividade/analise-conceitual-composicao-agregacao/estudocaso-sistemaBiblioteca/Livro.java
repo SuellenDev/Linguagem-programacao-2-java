@@ -1,4 +1,4 @@
-peckage sistemaBiblioteca;
+package sistemaBiblioteca;
 
 public class Livro{
   public String titulo;
