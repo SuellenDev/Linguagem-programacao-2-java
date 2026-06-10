@@ -10,7 +10,6 @@ public class Emprestimo{
     this.dataEmprestimo = dataEmprestimo;
     this.codigoEmprestimo = codigoEmprestimo;
     this.livro = livro;
-    this.livro = livro;
     this.dataEmprestimo = dataEmprestimo;
     this.codigoEmprestimo = codigoEmprestimo;
     this.livro.status = "Emprestado";
