@@ -29,3 +29,5 @@ public class Professor extends Pessoa {
         }
     }
 }
+//1)Explique as vantagens da reutilização promovida pela herança.
+//A herança permite reutilizar código, evitando repetições e facilitando a organização e manutenção do sistema. Por exemplo, Aluno e Professor podem herdar características de Pessoa.
