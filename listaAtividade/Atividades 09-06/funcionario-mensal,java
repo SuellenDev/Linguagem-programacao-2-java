@@ -1,0 +1,14 @@
+public class FuncionarioMensalista extends Funcionario {
+    private double salarioFixo;
+
+    // Construtor
+    public FuncionarioMensalista(String nome, String cpf, double salarioFixo) {
+        super(nome, cpf); // Passa o nome e cpf para a classe mãe
+        this.salarioFixo = salarioFixo;
+    }
+
+    @Override
+    public double calcularPagamento() {
+        return salarioFixo; 
+    }
+}
